@@ -1,4 +1,4 @@
-import { Twitter, Instagram, Facebook, Dribbble } from "lucide-react";
+import { Github, Instagram, Linkedin, Dribbble } from "lucide-react";
 import { memo } from "react";
 import { SOCIAL_ICONS } from "../hero/hero-data";
 
@@ -56,14 +56,6 @@ function Footer() {
                   href="/#"
                   className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
                 >
-                  Reviews
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/#"
-                  className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
-                >
                   Contact
                 </a>
               </li>
@@ -85,13 +77,13 @@ function Footer() {
               return (
                 <>
                   <a
-                    href={map.facebook || "#"}
-                    target={map.facebook ? "_blank" : undefined}
-                    rel={map.facebook ? "noopener noreferrer" : undefined}
-                    aria-label="Facebook"
+                    href={map.linkedin || "#"}
+                    target={map.linkedin ? "_blank" : undefined}
+                    rel={map.linkedin ? "noopener noreferrer" : undefined}
+                    aria-label="LinkedIn"
                     className="hover:text-gray-400 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
                   >
-                    <Facebook size={20} aria-hidden="true" />
+                    <Linkedin size={20} aria-hidden="true" />
                   </a>
                   <a
                     href={map.instagram || "#"}
@@ -103,13 +95,13 @@ function Footer() {
                     <Instagram size={20} aria-hidden="true" />
                   </a>
                   <a
-                    href={map.twitter || "#"}
-                    target={map.twitter ? "_blank" : undefined}
-                    rel={map.twitter ? "noopener noreferrer" : undefined}
-                    aria-label="Twitter"
+                    href={map.github || "#"}
+                    target={map.github ? "_blank" : undefined}
+                    rel={map.github ? "noopener noreferrer" : undefined}
+                    aria-label="GitHub"
                     className="hover:text-gray-400 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
                   >
-                    <Twitter size={20} aria-hidden="true" />
+                    <Github size={20} aria-hidden="true" />
                   </a>
                   <a
                     href={map.dribbble || "#"}
