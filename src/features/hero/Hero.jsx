@@ -236,15 +236,15 @@ function Hero() {
               </div>
             </div>
 
-            {/* Profile image on the right (desktop only) */}
-            <div className="hidden md:flex items-center justify-center flex-shrink-0">
+            {/* Profile image on the right (visible on mobile and desktop) */}
+            <div className="flex items-center justify-center flex-shrink-0 mt-6 md:mt-0">
               <div className="profile-ring">
                 <Image
                   src="/images/yuvraj-chaurasia.png"
                   alt="Profile of Yuvraj Chaurasia"
                   width={420}
                   height={420}
-                  className="object-cover w-56 h-56 md:w-80 md:h-80 border-8 border-white/90 shadow-2xl relative z-10"
+                  className="object-cover w-40 h-40 md:w-80 md:h-80 border-4 md:border-8 border-white/90 shadow-2xl relative z-10"
                   priority={true}
                 />
               </div>

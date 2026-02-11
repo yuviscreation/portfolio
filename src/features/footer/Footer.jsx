@@ -37,6 +37,14 @@ function Footer() {
               </li>
               <li>
                 <a
+                  href="/#about"
+                  className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
                   href="/#"
                   className="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
                 >
