@@ -9,7 +9,7 @@ import { ABOUT_SKILLS } from './about-data';
  */
 export default function AboutSection() {
   return (
-    <section className="w-full bg-black py-16 px-6 relative z-10 md:mb-[400px]">
+    <section id="about" className="w-full bg-black py-16 px-6 relative z-10 md:mb-[400px]">
       <InView>
       <div className="max-w-6xl mx-auto">
         {/* Heading */}

@@ -5,7 +5,7 @@
 
 
 /** Main navigation items - used in both desktop and mobile navs */
-export const NAV_ITEMS = ['Home', 'Skills', 'Education', 'Projects', 'Contact'];
+export const NAV_ITEMS = ['Home', 'About', 'Skills', 'Education', 'Projects', 'Contact'];
 
 /** Social media icons shown below hero text */
 export const SOCIAL_ICONS = [

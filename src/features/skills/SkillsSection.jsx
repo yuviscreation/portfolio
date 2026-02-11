@@ -31,15 +31,17 @@ export default function SkillsSection() {
             <div key={sec.title} className="">
               <h3 className="text-2xl md:text-3xl font-bold mb-[50px]">{sec.title}</h3>
 
-              <div className="flex justify-between items-center max-w-5xl mx-auto px-4 md:px-0">
-                {sec.icons.map((icon) => (
-                  <div key={icon.src} className="flex flex-col items-center gap-3 w-28">
-                    <div className="w-20 h-20 icon-bg rounded-lg flex items-center justify-center border border-white/8">
-                      <Image src={icon.src} alt={icon.label} width={64} height={64} className="object-contain" />
+              <div className="max-w-5xl mx-auto px-4 md:px-0">
+                <div className="flex items-center md:justify-between gap-4 md:gap-8 overflow-x-auto md:overflow-visible py-2 -mx-4 px-4">
+                  {sec.icons.map((icon) => (
+                    <div key={icon.src} className="flex flex-col items-center gap-3 w-28 flex-shrink-0">
+                      <div className="w-20 h-20 icon-bg rounded-lg flex items-center justify-center border border-white/8">
+                        <Image src={icon.src} alt={icon.label} width={64} height={64} className="object-contain" />
+                      </div>
+                      <span className="text-sm md:text-base text-gray-300">{icon.label}</span>
                     </div>
-                    <span className="text-sm md:text-base text-gray-300">{icon.label}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           ))}
